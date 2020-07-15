@@ -6,3 +6,4 @@ TO RUN
 Change the variable value to match the location of your 'TASystemSettings.ini' file
 (In my case is C:\Users\Jake\Documents\My Games\Rocket League\TAGame\Config)
 
+You must also change your rocket league settings to display co-op mode vertically.
