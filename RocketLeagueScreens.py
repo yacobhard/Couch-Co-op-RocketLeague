@@ -2,7 +2,7 @@ import re
 from time import sleep
 import webbrowser
 
-myrocketleaguefile = r'YOURFILEPATH\My Games\Rocket League\TAGame\Config\TASystemSettings.ini'
+myrocketleaguefile = r'YOURFILEPATH'
 
 
 # file input
