@@ -2,7 +2,7 @@ import re
 from time import sleep
 import webbrowser
 
-myrocketleaguefile = 'C:\\Users\\Jake\\Documents\\My Games\\Rocket League\\TAGame\\Config\\TASystemSettings.ini'
+myrocketleaguefile = r'YOURFILEPATH\My Games\Rocket League\TAGame\Config\TASystemSettings.ini'
 
 
 # file input
@@ -39,7 +39,7 @@ def take_the_input():
 
         print("Would you like to alter resolution?")
         print('')
-        u = input('y, n or q \n').lower()  # Take the input as lowercase
+        u = input("y, n or q \n").lower()  # Take the input as lowercase
         print("***********************************")
         if u not in acceptable_inputs:  # Gateway to the program, only valid inputs
             print("Does not compute")
@@ -49,12 +49,6 @@ def take_the_input():
         return u  # Take a valid input
 
 
-def open_game():  # Launch Rocket League
-    print("Launching game...")
-    webbrowser.open_new('steam://rungameid/252950')
-    sleep(3)
-
-
 def resolution_change(option, curr, opp):
     if option == 'n':
         open_game()
@@ -62,9 +56,9 @@ def resolution_change(option, curr, opp):
 
     elif option == 'y':  # Adjust Screen size
 
-        new_config = re.sub(curr, opp, message)
+        new_config = re.sub(curr, opp, message)  # Swap the values of the file
 
-        if current == '1920':  # Change to 2 player
+        if curr == '1920':  # Change to 2 player
             new_config = re.sub("Fullscreen=True", "Fullscreen=False", new_config)
             new_config = re.sub("Borderless=False", "Borderless=True", new_config)
             print("I detected current is " + str(curr))
@@ -87,6 +81,12 @@ def resolution_change(option, curr, opp):
         quit()
 
 
+def open_game():  # Launch Rocket League
+    print("Launching game...")
+    webbrowser.open_new('steam://rungameid/252950')
+    sleep(3)
+    
+        
 if __name__ == '__main__':
     current_res, opposite_res = get_resolution()
     user_input = take_the_input()
