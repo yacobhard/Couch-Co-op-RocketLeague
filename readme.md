@@ -7,3 +7,5 @@ Change the variable value to match the location of your 'TASystemSettings.ini' f
 (In my case is C:\Users\Jake\Documents\My Games\Rocket League\TAGame\Config)
 
 You must also change your rocket league settings to display co-op mode vertically.
+
+You also must have python interpreter installed to run this file with.
