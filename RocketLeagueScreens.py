@@ -3,6 +3,7 @@ from time import sleep
 import webbrowser
 
 myrocketleaguefile = r'YOURFILEPATH'
+STEAM_ID = 'steam://rungameid/252950'
 
 
 # file input
@@ -46,7 +47,7 @@ def take_the_input(resolution):
 
 def open_game():  # Launch Rocket League
     print("Launching game...")
-    webbrowser.open_new('steam://rungameid/252950')
+    webbrowser.open_new(STEAM_ID)
     sleep(3)
 
 
