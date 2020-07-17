@@ -11,7 +11,6 @@ def get_resolution():
     message = f.read()
     f.close()
 
-
     x = re.findall("ResX=3840", message)  # Variable to test the truthy-ness of re.findall()
 
     if x:  # If ResX=3840 is present
