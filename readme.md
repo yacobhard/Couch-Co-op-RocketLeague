@@ -7,8 +7,8 @@ You must change your rocket league settings to display co-op mode split vertical
 # TO setup -- 
 **Powershell**
 
-1. Change the variable values to match your filesystem layout accordingly;
-$MY_CONFIG_FILE - This is your TASystemSettings.ini file.
+1. Change the variable values to match your filesystem layout accordingly;\
+$MY_CONFIG_FILE - This is your TASystemSettings.ini file.\
 $MY_RL_SHORTCUT - This is a desktop shortcut file.
 
 2. Create a new desktop shortcut and browse to the location of the script.
