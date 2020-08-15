@@ -1,5 +1,3 @@
-## My Rocket League
-##
 ###
 ##
 ## Jake Hardy 
