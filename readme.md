@@ -26,7 +26,7 @@ powershell.exe -ExecutionPolicy Bypass -File
 # TO RUN -- 
 **Python**
 
-1. Change the variable value to match your filesystem layout accordingly;
+1. Change the variable value to match your filesystem layout accordingly;\
 myrocketleaguefile - This is your TASystemSettings.ini file.
 
 You also must have python interpreter installed to run this file.
