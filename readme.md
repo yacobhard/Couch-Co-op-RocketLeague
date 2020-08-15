@@ -14,14 +14,12 @@ $MY_RL_SHORTCUT - This is a desktop shortcut file.
 2. Create a new desktop shortcut and browse to the location of the script.
 3. Give your shortcut a friendly name.
 4. Right click the shortcut, hit properties.
-5. In the 'Target:' field, insert the following BEFORE the existing filepath;
-
+5. In the 'Target:' field, insert the following BEFORE the existing filepath;\
 powershell.exe -ExecutionPolicy Bypass -File
 
 6. Hit OK
 
 ## Use the desktop shortcut to run
-
 
 
 
